@@ -1,9 +1,9 @@
-defmodule ElixirSandbox.Mixfile do
+defmodule PlaygroundElixir.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :elixir_sandbox,
+      app: :playground_elixir,
       version: "0.1.0",
       elixir: "~> 1.6-dev",
       start_permanent: Mix.env == :prod,
@@ -21,8 +21,7 @@ defmodule ElixirSandbox.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
+      {:gen_stage, "0.12.1"}
     ]
   end
 end
