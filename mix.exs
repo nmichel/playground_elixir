@@ -5,7 +5,7 @@ defmodule PlaygroundElixir.Mixfile do
     [
       app: :playground_elixir,
       version: "0.1.0",
-      elixir: "~> 1.6-dev",
+      elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps()
     ]
@@ -21,7 +21,9 @@ defmodule PlaygroundElixir.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:gen_stage, "0.12.1"}
+      {:gen_stage, "~> 0.12.1"},
+      {:poison,    "~> 3.1"},
+      {:httpotion, "~> 3.0"}
     ]
   end
 end
