@@ -17,4 +17,8 @@ defmodule Tuto.GenStage.Counting.Middle do
   def handle_cancel({:down, :normal}, _from, state) do
     {:noreply, [], state}
   end
+
+  def handle_cancel({:cancel, :normal}, _from, state) do
+    {:noreply, [], state}
+  end
 end
