@@ -1,6 +1,7 @@
-defmodule StatelessCounterTest do
+defmodule Tuto.Stream.StatelessCounterTest do
   use ExUnit.Case, async: true
-  doctest StatelessCounter
+
+  alias Tuto.Stream.StatelessCounter
 
   test "it can be streamed" do
     assert(

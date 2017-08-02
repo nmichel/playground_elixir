@@ -1,7 +1,7 @@
-defmodule ShortcutTest do
+defmodule Tuto.Macro.ShortcutTest do
   use ExUnit.Case
-  doctest Shortcut
   import Kernel, except: [defmodule: 2]
+  alias Tuto.Macro.Shortcut
   use Shortcut, root: Toto.Titi.Tutu
 
   defmodule MyMod do

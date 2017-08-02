@@ -1,4 +1,4 @@
-defmodule Tuto.Module.Api.Builder do
+defmodule Tuto.Module.ApiBuilder do
   defmacro __using__(_opt) do
     quote do
       import unquote(__MODULE__)

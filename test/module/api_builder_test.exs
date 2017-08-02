@@ -1,10 +1,9 @@
-defmodule Tuto.Module.ApiTest do
+defmodule Tuto.Module.ApiBuilderTest do
   use ExUnit.Case
-  doctest Tuto.Module.Api.Builder
 
   defmodule Api do
-    use Tuto.Module.Api.Builder
-    alias Tuto.Module.Api.Builder, as: Builder
+    alias Tuto.Module.ApiBuilder, as: Builder
+    use Builder
 
     "./test/module/api.txt"
     |> File.stream!()

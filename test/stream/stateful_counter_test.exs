@@ -1,7 +1,8 @@
-defmodule StatefulCounterTest do
+defmodule Tuto.Stream.StatefulCounterTest do
   use ExUnit.Case
-  doctest StatefulCounter
 
+  alias Tuto.Stream.StatefulCounter
+  
   test "it can be streamed" do
     assert(
       StatefulCounter.new(40)
