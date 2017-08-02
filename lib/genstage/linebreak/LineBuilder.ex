@@ -17,7 +17,7 @@ defmodule Tuto.GenStage.Linebreak.LineBuilder do
     {lines, [acc]} =
       acc
       |> Kernel.<>(Enum.join(keys))
-      |> String.split("\n")
+      |> String.split(~r/\r\n?|\n/)
       |> Enum.split(-1)
     {:noreply, lines, acc}
   end
